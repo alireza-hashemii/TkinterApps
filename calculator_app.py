@@ -9,11 +9,27 @@ window.title("Calculator App")
 entry = Entry(window, borderwidth=5,width=22)
 entry.grid(row=0, column=0, columnspan=4 , padx=10, pady=10)
 
-# add function
-def add(number):
-    entry.delete(0,END)
-    entry.insert(0,number)
 
+# functions
+
+def add(number):
+    current = entry.get()
+    entry.delete(0,END)
+    entry.insert(0, str(current) + str(number))
+
+def clear():
+    entry.delete(0,END)
+
+def add_button():
+    global first_number
+    first_number = entry.get()
+    entry.delete(0,END)
+
+def equal_button():
+    global second_number
+    second_number = entry.get()
+    entry.delete(0,END)
+    entry.insert(0, int(first_number) + int(second_number))
 
 # keys of calculator are here
 button1 = Button(window, text="1", padx=18, pady=16 , command=lambda: add(1), bg="#71f6f6").grid(row=1, column=0)
@@ -31,9 +47,9 @@ button9 = Button(window, text="0", padx=18, pady=16, command=lambda: add(0), bg=
 
 
 
-button_add = Button(window, text="+", padx=18, pady=16, bg="#6ef5ba").grid(row=5, column=0)
-button_add = Button(window, text="Clear", padx=36, pady=16, bg="green").grid(row=4, column=1, columnspan=2)
-button_equal = Button(window, text="=", padx=45, pady=16, bg="#fb36ef").grid(row=5, column=1, columnspan=2)
+button_add = Button(window, text="+", padx=18, pady=16, bg="#6ef5ba",command=add_button).grid(row=5, column=0)
+button_add = Button(window, text="Clear", padx=36, pady=16, bg="green",command=clear).grid(row=4, column=1, columnspan=2)
+button_equal = Button(window, text="=", padx=45, pady=16, bg="#fb36ef", command=equal_button).grid(row=5, column=1, columnspan=2)
 
 
 window.mainloop()
