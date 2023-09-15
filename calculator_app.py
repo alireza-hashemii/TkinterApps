@@ -20,7 +20,6 @@ def add(number):
 def clear():
     entry.delete(0,END)
 
-
 def add_button():
     global first_number
     global math_operation 
