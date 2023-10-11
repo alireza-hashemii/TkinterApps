@@ -5,6 +5,7 @@ from PIL import ImageTk,Image
 
 window = Tk()
 
+# def for choosing a file in between
 def selection():
     global lbl
     global filename
