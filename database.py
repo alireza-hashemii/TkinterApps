@@ -116,7 +116,9 @@ query_btn =Button(window , text='Show Records', padx=10, pady=10, command=query 
 
 # commit changes into database
 connection.commit()
-.
+
+
+
 
 # close the connection
 cursor.close()
