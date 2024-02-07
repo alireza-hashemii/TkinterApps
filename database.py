@@ -118,8 +118,6 @@ query_btn =Button(window , text='Show Records', padx=10, pady=10, command=query 
 connection.commit()
 
 
-
-
 # close the connection
 cursor.close()
 window.mainloop()
