@@ -120,5 +120,4 @@ connection.commit()
 
 # close the connection
 cursor.close()
-
 window.mainloop()
