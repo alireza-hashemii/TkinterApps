@@ -66,9 +66,23 @@ label4=Label(root, text="PRESSURE", font=('Helvetica', 15, 'bold'), fg='white', 
 label4.place(x=650, y=400)
 
 
+t = Label(font=('arial', 70, 'bold'), fg="#ee666d")
+t.place(x=400, y=150)
 
+c = Label(font=('arial', 15, 'bold'))
+c.place(x=400, y=250)
 
+w = Label(text="...", font=('arial',20, 'bold'),bg="#1ab5ef")
+w.place(x=120, y=430)
 
+h = Label(text="...", font=('arial',20, 'bold'),bg="#1ab5ef")
+h.place(x=280, y=430)
+
+d = Label(text="...", font=('arial',20, 'bold'),bg="#1ab5ef")
+d.place(x=450, y=430)
+
+p = Label(text="...", font=('arial',20, 'bold'),bg="#1ab5ef")
+p.place(x=670, y=430) 
 
 
 
