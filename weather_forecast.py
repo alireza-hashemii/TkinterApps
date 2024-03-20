@@ -1,6 +1,7 @@
 from tkinter import messagebox, ttk
 from tkinter import *
 from tkinter import Tk
+from tkinter import Label
 from timezonefinder import TimezoneFinder
 from datetime import datetime
 from geopy.geocoders import Nominatim
@@ -48,7 +49,7 @@ logo.place(x=150, y=100)
 Frame_image = PhotoImage(file="imgicon/box.png")
 frame_myimage = Label(image=Frame_image)
 frame_myimage.pack(padx=5 , pady=5,side=BOTTOM )
-root.mainloop()
+
 
 # Label
 
@@ -71,7 +72,7 @@ label4.place(x=650, y=400)
 
 
 
-
+root.mainloop()
 
 
 
