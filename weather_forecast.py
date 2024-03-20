@@ -27,6 +27,19 @@ textfield = Entry(
             border=0
         )
 textfield.place(x=50,y=40)
+textfield.focus()
+
+search_icon = PhotoImage(file="imgicon/search_icon.png")
+my_image_icon = Button(
+            image=search_icon, 
+            borderwidth=0, 
+            cursor="hand2",
+            bg="#404040"
+        )
+my_image_icon.place(x=400, y=34)
+
+
+# Logo
 
 
 root.mainloop()
