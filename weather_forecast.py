@@ -40,6 +40,9 @@ my_image_icon.place(x=400, y=34)
 
 
 # Logo
+Logo_image = PhotoImage(file="imgicon/logo.png")
+logo = Label(image=Logo_image)
+logo.place(x=150, y=100)
 
 
 root.mainloop()
